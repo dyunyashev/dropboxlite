@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="184.0" prefWidth="301.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.myorg.client.controllers.ControllerAuthorization">
+   <VBox layoutX="22.0" layoutY="25.0" prefHeight="155.0" prefWidth="261.0">
+      <HBox prefHeight="38.0" prefWidth="262.0">
+            <Label text="Login">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="login" prefHeight="25.0" prefWidth="199.0" promptText="insert your login" />
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="273.0">
+            <Label text="Password">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <PasswordField fx:id="password" prefHeight="25.0" prefWidth="198.0" promptText="insert your password" />
+      </HBox>
+      <Label fx:id="errors" accessibleRole="TEXT_AREA" lineSpacing="1.0" prefHeight="34.0" prefWidth="257.0" textFill="#e4310d" />
+      <Button fx:id="enterButton" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#onAuthorizationBtnClick" prefHeight="25.0" prefWidth="81.0" text="Enter" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets bottom="5.0" left="200.0" right="5.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </VBox>
+</AnchorPane>

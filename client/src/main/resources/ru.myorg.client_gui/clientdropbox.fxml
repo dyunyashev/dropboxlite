@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.myorg.client.controllers.ControllerClientDropBox">
+  <TabPane AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+    <tabs>
+      <Tab closable="false" text="Events">
+          <TextArea fx:id="eventList" editable="false" wrapText="true">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+          </TextArea>
+      </Tab>
+      <Tab closable="false" text="Storage">
+          <TabPane AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+              <tabs>
+                  <Tab closable="false" text="Files on the server">
+                      <ListView fx:id="filesOnServer">
+                        <padding>
+                           <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                        </padding>
+                      </ListView>
+                  </Tab>
+                  <Tab closable="false" text="Shared files">
+                      <ListView fx:id="sharedFiles">
+                        <padding>
+                           <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                        </padding></ListView>
+                  </Tab>
+              </tabs>
+          </TabPane>
+      </Tab>
+    </tabs>
+  </TabPane>
+</AnchorPane>

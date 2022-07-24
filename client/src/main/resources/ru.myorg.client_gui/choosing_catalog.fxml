@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="48.0" prefWidth="245.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.myorg.client.controllers.ControllerChoosingCatalog">
+   <VBox prefHeight="48.0" prefWidth="245.0">
+      <HBox prefHeight="30.0" prefWidth="394.0">
+            <Button mnemonicParsing="false" onAction="#onChooseCatalogClick" prefHeight="25.0" prefWidth="237.0" text="Select a directory for files" />
+      </HBox>
+      <Label fx:id="errorMessage" prefHeight="19.0" prefWidth="238.0" textFill="#da1a1a" wrapText="true" />
+   </VBox>
+</AnchorPane>
